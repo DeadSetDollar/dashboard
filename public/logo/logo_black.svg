@@ -1,0 +1,20 @@
+<svg width="1479" height="307" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_2_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="309" width="1481" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="32.62524" x="1" height="244" width="207"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text filter="url(#svg_2_blur)" stroke="#000" transform="matrix(16.255384209515,0,0,14.758708281443226,-5440.38353489776,-3254.349162542603) " xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="24" id="svg_2" y="237.59234" x="336.46219" stroke-width="0.5" fill="#000000">Ð</text>
+  <text filter="url(#svg_2_blur)" stroke="#000" transform="matrix(11.724324226379395,0,0,11.724324226379395,-3898.29185628891,-2514.3513283878565) " xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="10" id="svg_3" y="232.53919" x="361.29691" stroke-width="0.2" fill="#000000">dead set dollar</text>
+ </g>
+</svg>
