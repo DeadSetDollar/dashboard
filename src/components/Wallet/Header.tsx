@@ -25,19 +25,13 @@ const AccountPageHeader = ({
   accountDEDBalance, accountDEDSBalance, totalDEDSSupply, accountStagedBalance, accountBondedBalance, accountStatus, unlocked
 }: AccountPageHeaderProps) => (
   <div style={{ padding: '2%', display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>
-    <div style={{ flexBasis: '20%' }}>
+    <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%' }}>
       <BalanceBlock asset="Balance" balance={accountDEDBalance} suffix={" DED"}/>
     </div>
-    <div style={{ flexBasis: '20%' }}>
-      <BalanceBlock asset="Staged" balance={accountStagedBalance}  suffix={" DED"}/>
-    </div>
-    <div style={{ flexBasis: '20%' }}>
-      <BalanceBlock asset="Bonded" balance={accountBondedBalance} suffix={" DED"} />
-    </div>
-    <div style={{ flexBasis: '20%' }}>
+    <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%' }}>
       <BalanceBlock asset="DAO Ownership" balance={ownership(accountDEDSBalance, totalDEDSSupply)}  suffix={"%"}/>
     </div>
-    <div style={{ flexBasis: '20%' }}>
+    <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%' }}>
       <TextBlock label="Status" text={status(accountStatus, unlocked)}/>
     </div>
   </div>

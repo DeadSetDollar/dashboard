@@ -51,7 +51,7 @@ function UniswapPool({ user }: {user: string}) {
       />
 
       <div style={{ padding: '1%', display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>
-        <div style={{ flexBasis: '50%' }}>
+        <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%', textAlign: 'right'}}>
           <MainButton
             title="Trade"
             description="Trade Ð tokens."
@@ -60,10 +60,10 @@ function UniswapPool({ user }: {user: string}) {
           />
         </div>
 
-        <div style={{ flexBasis: '50%', marginLeft: '3%', marginRight: '2%' }}>
+        <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%', textAlign: 'right'}}>
           <MainButton
-            title="Supply"
-            description="Supply and redeem liquidity."
+            title="Liquidity"
+            description="Provide and remove liquidity."
             icon={<i className="fas fa-water"/>}
             href={"https://uniswap.exchange/add/0x36f3fd68e7325a35eb768f1aedaae9ea0689d723/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"}
           />

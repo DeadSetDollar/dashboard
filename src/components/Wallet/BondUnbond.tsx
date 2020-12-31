@@ -27,17 +27,11 @@ function BondUnbond({
 
   return (
     <Box heading="Bond">
-      <div style={{display: 'flex', flexWrap: 'wrap'}}>
-        {/* Total bonded */}
-        <div style={{flexBasis: '16%'}}>
+      <div style={{ padding: '1%', display: 'flex', flexWrap: 'wrap', alignItems: 'top' }}>
+        <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%', textAlign: 'left'}}>
           <BalanceBlock asset="Bonded" balance={bonded} suffix={"DED"}/>
         </div>
-        {/* Total bonded */}
-        <div style={{flexBasis: '16%'}}>
-          <TextBlock label="Exit Lockup" text={lockup === 0 ? "" : lockup === 1 ? "1 epoch" : `${lockup} epochs`}/>
-        </div>
-        {/* Bond Ð within DAO */}
-        <div style={{flexBasis: '33%', paddingTop: '2%'}}>
+        <div style={{ flexBasis: '70%', flexGrow: 1, marginRight: '2%', textAlign: 'right'}}>
           <div style={{display: 'flex'}}>
             <div style={{width: '60%', minWidth: '6em'}}>
               <>
@@ -69,9 +63,12 @@ function BondUnbond({
             </div>
           </div>
         </div>
-        <div style={{width: '2%'}}/>
-        {/* Unbond Ð within DAO */}
-        <div style={{flexBasis: '33%', paddingTop: '2%'}}>
+      </div>
+      <div style={{ padding: '1%', display: 'flex', flexWrap: 'wrap', alignItems: 'top' }}>
+        <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%', textAlign: 'right'}}>
+          
+        </div>
+        <div style={{ flexBasis: '70%', flexGrow: 1, marginRight: '2%', textAlign: 'right'}}>
           <div style={{display: 'flex'}}>
             <div style={{width: '60%', minWidth: '6em'}}>
               <>
@@ -104,6 +101,7 @@ function BondUnbond({
           </div>
         </div>
       </div>
+
       <div style={{width: '100%', paddingTop: '2%', textAlign: 'center'}}>
         <span style={{ opacity: 0.5 }}> Bonding events will restart the lockup timer </span>
       </div>

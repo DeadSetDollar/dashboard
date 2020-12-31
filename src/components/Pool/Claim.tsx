@@ -13,12 +13,13 @@ import BigNumberInput from "../common/BigNumberInput";
 
 type ClaimProps = {
   poolAddress: string
+  rewarded: BigNumber,
   claimable: BigNumber,
   status: number
 };
 
 function Claim({
-  poolAddress, claimable, status
+  poolAddress, rewarded, claimable, status
 }: ClaimProps) {
   const [claimAmount, setClaimAmount] = useState(new BigNumber(0));
 
@@ -26,12 +27,14 @@ function Claim({
     <Box heading="Claim">
       <div style={{display: 'flex', flexWrap: 'wrap'}}>
         {/* total Issued */}
-        <div style={{flexBasis: '32%'}}>
+        <div style={{flexBasis: '50%', flexGrow: 1, textAlign: 'center'}}>
+            <BalanceBlock asset="Rewarded" balance={rewarded} suffix={"DED"} />
+          </div>
+        <div style={{flexBasis: '50%', flexGrow: 1, textAlign: 'center'}}>
           <BalanceBlock asset="Claimable" balance={claimable} suffix={"DED"} />
         </div>
         {/* Deposit UNI-V2 into Pool */}
-        <div style={{flexBasis: '35%'}}/>
-        <div style={{flexBasis: '33%', paddingTop: '2%'}}>
+        <div style={{flexBasis: '100%', paddingTop: '2%'}}>
           <div style={{display: 'flex'}}>
             <div style={{width: '60%', minWidth: '6em'}}>
               <>

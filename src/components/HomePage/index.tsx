@@ -72,19 +72,17 @@ function HomePage({user}: HomePageProps) {
   }, [user]);
 
   return (
-    <>
-      <div style={{ padding: '1%', display: 'flex', flexWrap: 'wrap', alignItems: 'top' }}>
-        <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%', textAlign: 'right'}}>
-          <EpochBlock epoch={epochTime}/>
-        </div>
-        <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%', textAlign: 'right'}}>
-          <SupplyBlock supply={totalSupply.toNumber().toFixed(2)}/>
-        </div>
-        <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%', textAlign: 'right'}}>
-          <PriceBlock balance={pairBalanceDAI.dividedBy(pairBalanceDED)} suffix={"DAI"}/>
-        </div>
+    <div style={{ padding: '1%', display: 'flex', flexWrap: 'wrap', alignItems: 'top', marginTop: '13%'}}>
+      <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%', textAlign: 'right'}}>
+        <EpochBlock epoch={epochTime}/>
       </div>
-    </>
+      <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%', textAlign: 'right'}}>
+        <SupplyBlock supply={totalSupply.toNumber().toFixed(2)}/>
+      </div>
+      <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%', textAlign: 'right'}}>
+        <PriceBlock balance={pairBalanceDAI.dividedBy(pairBalanceDED)} suffix={"DAI"}/>
+      </div>
+    </div>
   );
 }
 

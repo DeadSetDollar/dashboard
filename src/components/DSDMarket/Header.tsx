@@ -16,19 +16,14 @@ const TradePageHeader = ({
 
   return (
     <div style={{ padding: '2%', display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>
-      <div style={{ flexBasis: '25%' }}>
+      <div style={{ flexBasis: '30%' }}>
         <BalanceBlock asset="DED Price" balance={price} suffix={"DAI"}/>
       </div>
-      <div style={{ flexBasis: '25%' }}>
+      <div style={{ flexBasis: '30%' }}>
         <BalanceBlock asset="DED Liquidity" balance={pairBalanceDED} suffix={"DED"}/>
       </div>
-      <div style={{ flexBasis: '25%' }}>
+      <div style={{ flexBasis: '30%' }}>
         <BalanceBlock asset="DAI Liquidity" balance={pairBalanceDAI} suffix={"DAI"}/>
-      </div>
-      <div style={{ flexBasis: '25%' }}>
-        <>
-          <AddressBlock label="Uniswap Contract" address={uniswapPair} />
-        </>
       </div>
     </div>
   );

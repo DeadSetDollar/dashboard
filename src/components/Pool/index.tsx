@@ -168,19 +168,9 @@ function Pool({ user }: {user: string}) {
 
       <Claim
         poolAddress={poolAddress}
+        rewarded={userRewardedBalance}
         claimable={userClaimableBalance}
         status={userStatus}
-      />
-
-      <Provide
-        poolAddress={poolAddress}
-        user={user}
-        rewarded={userRewardedBalance}
-        status={userStatus}
-        pairBalanceDED={pairBalanceDED}
-        pairBalanceDAI={pairBalanceDAI}
-        userDAIBalance={userDAIBalance}
-        userDAIAllowance={userDAIAllowance}
       />
     </>
   );

@@ -25,19 +25,13 @@ const PoolPageHeader = ({
   accountUNIBalance, accountBondedBalance, accountRewardedDEDBalance, accountClaimableDEDBalance, poolTotalBonded, accountPoolStatus, unlocked
 }: PoolPageHeaderProps) => (
   <div style={{ padding: '2%', display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>
-    <div style={{ flexBasis: '20%' }}>
+    <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%', textAlign: 'right' }}>
       <BalanceBlock asset="Balance" balance={accountUNIBalance}  suffix={" UNI-V2"}/>
     </div>
-    <div style={{ flexBasis: '20%' }}>
-      <BalanceBlock asset="Rewarded" balance={accountRewardedDEDBalance} suffix={" DED"} />
-    </div>
-    <div style={{ flexBasis: '20%' }}>
-      <BalanceBlock asset="Claimable" balance={accountClaimableDEDBalance} suffix={" DED"} />
-    </div>
-    <div style={{ flexBasis: '20%' }}>
+    <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%', textAlign: 'right' }}>
       <BalanceBlock asset="Pool Ownership" balance={ownership(accountBondedBalance, poolTotalBonded)}  suffix={"%"}/>
     </div>
-    <div style={{ flexBasis: '20%' }}>
+    <div style={{ flexBasis: '30%', flexGrow: 1, marginRight: '2%', textAlign: 'right' }}>
       <TextBlock label="Pool Status" text={status(accountPoolStatus, unlocked)}/>
     </div>
   </div>
